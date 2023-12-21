@@ -34,8 +34,8 @@ const services = [
 const Services = () => {
   return (
     <section>
-      <div>
-        <h3 className="text-xl pt-4 font-medium">Services I offer</h3>
+      <div className="mt-14 md:text-lg">
+        <h3 className="text-xl font-medium md:text-3xl">Services I offer</h3>
         <p className="text-md py-2 leading-7 text-gray-800">
           I have hands-on experience developing several{" "}
           <span className="text-teal-500">personal projects</span>, showcasing
@@ -52,17 +52,18 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="md:flex md:gap-10">
-        {/* Services I offer */}
+      <div className="md:flex md:gap-12">
         {services.map((service, i) => (
           <div
             key={i}
-            className="text-center shadow-md border border-gray-100 p-5 rounded-xl my-10"
+            className="text-center shadow-md border border-gray-100 p-5 rounded-xl my-10 md:text-lg md:shadow-xl"
           >
             <div className="flex justify-center">
               <img src={service.img} width={100} height={100} />
             </div>
-            <h3 className="text-lg font-medium pt-5 pb-2">{service.topic}</h3>
+            <h3 className="text-lg font-semibold pt-5 pb-2 md:font-bold">
+              {service.topic}
+            </h3>
             <p className="py-2">{service.description}</p>
             <h4 className="py-2 text-teal-600">{service.title}</h4>
             {service.tools.map((item, j) => (
