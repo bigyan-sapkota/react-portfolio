@@ -3,7 +3,7 @@ import contact from "../assets/contact.jpg";
 
 const Contact = () => {
   return (
-    <section>
+    <section id="contact">
       <h3 className="text-xl font-medium md:text-3xl">Contact Me</h3>
       <div className="md:flex md:items-center md:justify-between">
         <div>
