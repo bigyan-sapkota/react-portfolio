@@ -10,9 +10,12 @@ const NavItems = ({ current, setCurrent, className }) => {
             setCurrent("home");
           }}
         >
-          <p className="cursor-pointer hover:scale-[1.03] text-center py-4 md:py-0">
-            Home
-          </p>
+          <a href="#home" className="link">
+            <p className="cursor-pointer hover:scale-[1.03] text-center py-4 md:py-0">
+              Home
+            </p>
+          </a>
+
           <hr className="bg-gray-200 h-0.5 md:hidden" />
           <hr
             className={
@@ -25,9 +28,12 @@ const NavItems = ({ current, setCurrent, className }) => {
             setCurrent("projects");
           }}
         >
-          <p className="cursor-pointer hover:scale-[1.03] text-center py-4 md:py-0">
-            Projects
-          </p>
+          <a href="#projects" className="link">
+            <p className="cursor-pointer hover:scale-[1.03] text-center py-4 md:py-0">
+              Projects
+            </p>
+          </a>
+
           <hr className="bg-gray-200 h-0.5 md:hidden" />
           <hr
             className={
@@ -40,10 +46,11 @@ const NavItems = ({ current, setCurrent, className }) => {
             setCurrent("services");
           }}
         >
-          <p className="cursor-pointer hover:scale-[1.03] text-center py-4 md:py-0">
-            Services
-          </p>
-
+          <a href="#services" className="link">
+            <p className="cursor-pointer hover:scale-[1.03] text-center py-4 md:py-0">
+              Services
+            </p>
+          </a>
           <hr
             className={
               current === "services" ? "bg-teal-500 h-1 mt-1 w-[80%]" : "hidden"

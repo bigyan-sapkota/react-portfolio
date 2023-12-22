@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
 
         <div className="image">
-          <div className="bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 overflow-hidden md:w-96 md:h-96 mx-auto my-5">
+          <div className="bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 overflow-hidden md:w-96 md:h-96 mx-auto mb-4 -mt-5 md:my-5">
             <img src={deved} className="object-cover h-full w-full" />
           </div>
         </div>

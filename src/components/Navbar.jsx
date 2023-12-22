@@ -6,7 +6,7 @@ const Navbar = () => {
   const [current, setCurrent] = useState("home");
   const [showMenu, setshowMenu] = useState(false);
   return (
-    <section>
+    <section id="home">
       <nav className="pt-10 mb-12 flex justify-between items-center">
         <h1 className="text-2xl font-bold md:text-3xl">
           BIG

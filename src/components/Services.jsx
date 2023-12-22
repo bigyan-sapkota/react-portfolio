@@ -33,9 +33,11 @@ const services = [
 
 const Services = () => {
   return (
-    <section>
-      <div className="mt-14 md:text-lg">
-        <h3 className="text-xl font-medium md:text-3xl">Services I offer</h3>
+    <section className="mt-3 md:mt-14 md:text-lg" id="services">
+      <div>
+        <h3 className="text-xl font-medium md:text-3xl py-2">
+          Services I offer
+        </h3>
         <p className="text-md py-2 leading-7 text-gray-800">
           I have hands-on experience developing several{" "}
           <span className="text-teal-500">personal projects</span>, showcasing
@@ -56,18 +58,18 @@ const Services = () => {
         {services.map((service, i) => (
           <div
             key={i}
-            className="text-center shadow-md border border-gray-100 p-5 rounded-xl my-10 md:text-lg md:shadow-xl"
+            className="text-center shadow-md border border-gray-100 p-3 md:p-5 rounded-xl my-10 md:text-lg md:shadow-xl"
           >
             <div className="flex justify-center">
               <img src={service.img} width={100} height={100} />
             </div>
-            <h3 className="text-lg font-semibold pt-5 pb-2 md:font-bold">
+            <h3 className="text-lg font-semibold pt-3 pb-1 md:font-bold md:pt-5 md:pb-3">
               {service.topic}
             </h3>
-            <p className="py-2">{service.description}</p>
-            <h4 className="py-2 text-teal-600">{service.title}</h4>
+            <p className="py-1 md:py-2">{service.description}</p>
+            <h4 className="py-1 text-teal-600 md:py-2">{service.title}</h4>
             {service.tools.map((item, j) => (
-              <p key={j} className="text-gray-800 pb-0.5">
+              <p key={j} className="text-gray-800 md:pb-0.5">
                 {item}
               </p>
             ))}

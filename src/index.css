@@ -21,5 +21,9 @@ body {
 
 .flex-column {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+}
+
+.link {
+  text-decoration: none;
 }
