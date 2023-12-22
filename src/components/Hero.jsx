@@ -22,9 +22,15 @@ const Hero = () => {
             </p>
           </div>
           <div className="text-3xl flex justify-center gap-12 py-3 text-gray-600 md:absolute md:flex-col md:-left-3 md:top-80 md:gap-6 md:pr-2 md:py-2 md:bg-black md:rounded-t-xl md:rounded-b-xl md:text-white">
-            <AiFillGithub className="social-media" />
-            <AiFillLinkedin className="social-media" />
-            <AiFillInstagram className="social-media" />
+            <a href="https://github.com/bigyan-sapkota">
+              <AiFillGithub className="social-media" />
+            </a>
+            <a href="https://www.linkedin.com/in/bigyan-sapkota-4b949929a/">
+              <AiFillLinkedin className="social-media" />
+            </a>
+            <a href="https://www.instagram.com/bigyansapkota/">
+              <AiFillInstagram className="social-media" />
+            </a>
           </div>
           <div className="pt-3">
             <Button className="hidden md:block" />
