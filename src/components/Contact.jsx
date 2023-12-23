@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import contact from "../assets/contact.jpg";
 
 const Contact = () => {

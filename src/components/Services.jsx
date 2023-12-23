@@ -61,7 +61,7 @@ const Services = () => {
             className="text-center shadow-md border border-gray-100 p-3 md:p-5 rounded-xl my-10 md:text-lg md:shadow-xl"
           >
             <div className="flex justify-center">
-              <img src={service.img} width={100} height={100} />
+              <img src={service.img} width={70} height={70} />
             </div>
             <h3 className="text-lg font-semibold pt-3 pb-1 md:font-bold md:pt-5 md:pb-3">
               {service.topic}
