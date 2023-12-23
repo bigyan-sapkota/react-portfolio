@@ -39,9 +39,9 @@ const Footer = () => {
           <h2 className="font-semibold mb-3 text-xl text-white md:text-2xl">
             Find Me On
           </h2>
-          {items.map((item, i) => (
+          {items.map((item, ind) => (
             <div
-              key="i"
+              key={ind}
               className="flex items-center gap-2 text-sm mb-2 font-light text-white"
             >
               <div className="text-lg md:text-xl">{item.icon}</div>
