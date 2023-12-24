@@ -3,10 +3,11 @@ import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import contact from "../assets/contact.jpg";
+import { MdError } from "react-icons/md";
 
 const Contact = () => {
   const schema = yup.object().shape({
-    fullName: yup.string().required("Your Full Name is required"),
+    fullName: yup.string().required("Full Name is required"),
     subject: yup.string().required("Subject is required"),
     email: yup
       .string()
@@ -42,24 +43,56 @@ const Contact = () => {
             className="contact-input"
             {...register("fullName")}
           />
+          {errors.fullName?.message ? (
+            <p className="-mt-2 mb-2 text-base text-red-600 flex items-center gap-1">
+              <MdError />
+              {errors.fullName.message}
+            </p>
+          ) : (
+            ""
+          )}
           <input
             type="email"
             placeholder="Email"
             className="contact-input"
             {...register("email")}
           />
+          {errors.email?.message ? (
+            <p className="-mt-2 mb-2 text-base text-red-600 flex items-center gap-1">
+              <MdError />
+              {errors.email.message}
+            </p>
+          ) : (
+            ""
+          )}
           <input
             type="text"
             placeholder="Subject"
             className="contact-input"
             {...register("subject")}
           />
+          {errors.subject?.message ? (
+            <p className="-mt-2 mb-2 text-base text-red-600 flex items-center gap-1">
+              <MdError />
+              {errors.subject.message}
+            </p>
+          ) : (
+            ""
+          )}
           <input
             type="text"
             placeholder="Your Message"
             className="contact-input"
             {...register("message")}
           />
+          {errors.message?.message ? (
+            <p className="-mt-2 mb-2 text-base text-red-600 flex items-center gap-1">
+              <MdError />
+              {errors.message.message}
+            </p>
+          ) : (
+            ""
+          )}
           <div className="flex justify-center mt-2">
             <input
               type="submit"

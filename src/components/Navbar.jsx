@@ -7,7 +7,7 @@ const Navbar = () => {
   const [showMenu, setshowMenu] = useState(false);
   return (
     <section id="home">
-      <nav className="pt-10 mb-12 flex justify-between items-center">
+      <nav className="pt-5 mb-12 flex justify-between items-center md:pt-7">
         <h1 className="text-2xl font-bold md:text-3xl">
           BIG
           <span className="text-teal-500">YAN</span>
