@@ -19,7 +19,7 @@ const projects = [
   {
     icon: <DiGhostSmall />,
     title: "Mini Projects",
-    link: "www.google.com",
+    link: "https://mini-projects-bigyan.netlify.app/",
     description: "Mini Projects",
   },
 ];
