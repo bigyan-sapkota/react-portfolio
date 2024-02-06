@@ -42,7 +42,7 @@ const MyProjects = () => {
           return (
             <div
               key={i}
-              className="border border-gray-200 rounded-xl shadow-lg flex flex-col items-center py-4 mb-5 md:py-7 md:shadow-xl"
+              className="border border-gray-200 rounded-xl shadow-lg flex flex-col items-center py-4 mb-5 md:py-7 md:shadow-md"
             >
               <a href={item.link} target="_blank">
                 <div className="border-[7px] border-cyan-500 rounded-full text-5xl w-28 h-28 flex items-center justify-center">
