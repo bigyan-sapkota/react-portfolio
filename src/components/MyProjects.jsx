@@ -2,6 +2,7 @@ import React from "react";
 import { SiWebpack } from "react-icons/si";
 import { FaShoppingCart } from "react-icons/fa";
 import { DiGhostSmall } from "react-icons/di";
+import { FaSuitcase } from "react-icons/fa";
 
 const projects = [
   {
@@ -21,6 +22,12 @@ const projects = [
     title: "Mini Projects",
     link: "https://mini-projects-bigyan.netlify.app/",
     description: "Mini Projects",
+  },
+  {
+    icon: <FaSuitcase />,
+    title: "Jobster",
+    link: "https://jobster-bigyansapkota.netlify.app/",
+    description: "Jobster",
   },
 ];
 
