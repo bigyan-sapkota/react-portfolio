@@ -18,16 +18,16 @@ const projects = [
     description: "Ecommerce Site",
   },
   {
-    icon: <DiGhostSmall />,
-    title: "Mini Projects",
-    link: "https://mini-projects-bigyan.netlify.app/",
-    description: "Mini Projects",
-  },
-  {
     icon: <FaSuitcase />,
     title: "Jobster",
     link: "https://jobster-bigyansapkota.netlify.app/",
     description: "Jobster",
+  },
+  {
+    icon: <DiGhostSmall />,
+    title: "Mini Projects",
+    link: "https://mini-projects-bigyan.netlify.app/",
+    description: "Mini Projects",
   },
 ];
 
